@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3,h4, h5 {
+    font-family: 'Marcellus', serif;
+}
+
+/*nav{
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   background-color: var(--negro2);
+   font-family: 'Marcellus', serif;
+   font-size: 1.3em;
+   padding: 1rem;
+}
+
+.item{
+    padding: 1rem;
+}
+
+.menu a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: var(--azuloscuro);
+    padding: 0.5rem 1rem;
+    color: var(--blanco);
+    border-radius: 5px;
+    font-family: 'Marcellus', serif;
+    font-size: 1em;
+}
+
+menu i{
+    margin-right: 0.5rem;
+}
+
+.logo img{
+    height: 3rem;
+}
+
+
+
+#features{
+    display:flex;
+    flex-direction: column;
+    background-image: url('../img/index/bg-features.png');
+    color: white;
+    padding-top: 1rem;
+
+}
+
+.feature-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+   
+}
+
+.feature-tittle{
+    background-color: rgb(0, 0, 0,0.2);
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.5rem 0;
+}
+
+.feature{
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    min-width: 180px;
+    max-width: 250px;
+}
+
+.feature i{
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+.feature-blue{
+    background-color: #00325eae;
+}
+
+.feature-black{
+    background-color: rgba(0,0,0,0.59);
+}
+*/
+
+/*Mobile vfirst*/
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    background-color: var(--negro2);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.logo i {
+    color: var(--blanco);
+    font-size: 2em;
+}
+
+.logo img {
+    width: 40%;
+    max-width: 200px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(1, 10, 52, 0.838);
+  
+}
+
+.menu-hr {
+    width: 90%;
+    background-color: var(--blanco);
+}
+
+.item {
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+}
+
+nav a:hover {
+    background-color: #0B3860;
+    width: 100%;
+}
+
+.navbar-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family:   'Marcellus',serif;
+    color: var(--blanco);
+}
+
+@media screen and (min-width: 768px){
+}
+
+
+@media screen and (min-width: 1024px){
+   nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--negro2);
+   }
+   .logo img{
+    width: 100%;
+    max-width: 180px;
+    }
+   .menu{
+    background-color: var(--negro2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+   .logo i{
+    display: none;
+   }
+   .menu-hr{
+    display: none;
+   }
+   .navbar-button{
+    background-color: var(--azuloscuro);
+   }
+   .logo{
+    padding: 1rem;
+   }
+
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+
+.img1 {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.imagen h2 {
+    background-color: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    align-items: center;
+    top: 80%;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    max-width: 100%;
+    width: 97%;
+}
+
+.parrafo {
+    color: var(--negro2);
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex1 {
+    padding-top: 1.6rem;
+    font-size: 1.3rem;
+    flex-basis: 48rem;
+    padding-left: 3rem;
+}
+
+.flex2 {
+    flex-basis: 9rem;
+    padding-right: 2rem;
+}
