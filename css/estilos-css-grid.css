@@ -31,7 +31,7 @@ h1, h2, h3,h4, h5 {
     display: grid;
     grid-template:
     "nav" auto
-    "banner" 400px
+    "banner" auto
     "descripcion" auto
     "feature" auto 
     "ubicacion" auto
@@ -121,12 +121,34 @@ nav a:hover {
     background-size: cover;
     background-position: 50% 50%;
     min-height: 400px;
+
 }
 
+
+#descripcion p{
+    padding: 2rem 1.2rem;
+}
+
+#feature{
+    background-image: url('../img/index/bg-features.png');
+    background-size: cover;
+    background-position: 70% 30%;
+    color: white;
+}
+.feature-tittle{
+    background-color: rgb(0, 0, 0,0.2);
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0.5rem 0;
+}
+
+
+/*Resolucion para tabletas*/
 @media screen and (min-width:768px) {
-
+   
+        
 }
-
 
 /*Resolucion desktop*/
 @media screen and (min-width:1024px) {
@@ -160,16 +182,29 @@ nav a:hover {
     .item{
         margin: 1rem;
     }
+    #banner{
+        margin-top: 8%;
+    }
 
 }
 
 /*Resolucion macro*/
 @media screen and (min-width:1308px) {
-    body{
-        background-color: #B2B3B3;
-    }
+
     #container-grid{
         max-width: 1200px;
         margin: 0 auto;
     }
+    nav{
+        width: 100%;
+        max-width: 1200px;
+    }
+    nav a:hover{
+        background: none;
+    }
+    #banner{
+        max-width: 1200px;
+        width: 100%;
+    }
+
 }
