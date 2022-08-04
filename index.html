@@ -1,69 +1,99 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="https://kit.fontawesome.com/6131ecdde6.js" 
-    crossorigin="anonymous"></script>
-    <title>Hotelia</title>
+    <link rel="stylesheet" href="css/estilos-css-grid.css">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js"  crossorigin="anonymous"></script>
+    <title>Hotelia con CSS GRID</title>
 </head>
-<body> 
+<body>
 
-   <nav>
-        <div class="logo">
-            <img src="img/Hotelia horizontal blanco.svg" alt="">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+    <div id="container-grid">
 
-        <div class="menu">
-            <a href="index.html" class="item">Inicio</a>
-            <a href="ubicanos.html" class="item">Ubicanos</a>
-            <a href="op.html" class="item">Opiniones</a>
-            <hr class="menu-hr" noshade="">
-            <a href="#" class="item"> <button class="navbar-button"><i class="fa-solid fa-user"></i>Iniciar Sesión</button></a>
-        </div>
-   </nav>
+        <nav>
+            <div class="logo">
+                <img src="img/Hotelia horizontal blanco.svg" alt="">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    
+            <div class="menu">
+                <a href="index.html" class="item">Inicio</a>
+                <a href="ubicanos.html" class="item">Ubicanos</a>
+                <a href="op.html" class="item">Opiniones</a>
+                <hr class="menu-hr" noshade="">
+                <a href="#" class="item"> <button class="navbar-button"><i class="fa-solid fa-user"></i>Iniciar Sesión</button></a>
+            </div>
+        </nav>
 
-   <section id="contenedor">
-    <div class="imagen">
-       <img class= "img1" src="img/index/slide1.jpg" alt="">
-        <h2 >Lorem Visitanos y podras encontrar</h2>
+        <section id="banner">
+            
+        </section>
+        <section id="descripcion">
+                <p>Estamos ubicados en el barrio La Cabrera al norte de Bogotá, en un contexto de lujo donde interactúan los negocios, 
+                el ocio y el descanso, gracias a su estratégica ubicación rodeada de bancos, restaurantes de alta cocina, centros comerciales,
+                almacenes de lujo y emblemáticos parques para aprovechar la naturaleza entre la ciudad caminay y hacer un poco de deporte al aire 
+                libre están el parque del Virrey y El Parque de la 93. Además de nuestro exclusivo diseño, ponemos a tu disposición una oferta 
+                gastronómica tan sofisticada como saludable a base de productos locales, cargados de lo mejor de la tradición colombiana.</p>
+        </section>
+        <section id="featur">
+            <h2 class="feature-tittle">Razones por las que disfrutarás quedarte con nosotros</h2>
+            <div class="feature-description1">
+                <div class="feature feature-blue">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    <p>Reserva</p>
+                </div>
+                <div class="feature feature-black">
+                    <i class="fa-solid fa-bed"></i>
+                    <p>Descanso</p>
+                </div>
+                </div>
+                <div class="feature-description2">
+                <div class="feature feature-black">
+                    <i class="fa-solid fa-wifi"></i>
+                    <p>Wifi</p>
+                </div>
+                <div  class="feature feature-blue">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <p>Deporte</p>
+                </div>
+            </div>
+        </section>
+        <section id="ubicacion">
+            <h2>Ubícanos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.963179898835!2d-74.07730698577846!3d4.600617843799563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a716030ee5%3A0xc494c29041303081!2zQ3JhLiA4ICMxMiwgQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1659559795455!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>AVENIDA CARRERA 8, #12A-42, BOGOTÁ DC, COLOMBIA</h2>
+            <hr class="ubi-hr" noshade="">
+            <h2>+57 601 4567899</h2>
+        </section>
+        <section id="opinion">
+            <h2>Nuestros usuarios dicen...</h2>
+        </section>
+        <footer>
+            <div class="text-fo">
+               <p>Contenido</p>
+            </div>
+            <hr class="footer-hr" noshade="">
+            <div class="text-fo2">
+            <p><i class="fa-solid fa-location-dot"></i>AVENIDA CARRERA 8, #12A-42, BOGOTÁ DC, COLOMBIA</p>
+            <p><i class="fa-solid fa-phone"></i>+57 601 4567899</p>
+            </div>
+
+            <hr class="footer-hr" noshade="">
+
+            <div class="footer-h3">
+            <p>Politicas de privacidad </p>   <p>Politicas de privacidad </p>
+            </div>
+            <hr class="footer-hr" noshade="">
+            <div class="footer-r">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            </div>
+        </footer>
+
     </div>
-    <div class="parrafo">
-        <p class=" flex1">Estamos ubicados en el barrio La Cabrera al norte de Bogotá, en un contexto de lujo donde interactúan los negocios, 
-        el ocio y el descanso, gracias a su estratégica ubicación rodeada de bancos, restaurantes de alta cocina, centros comerciales,
-        almacenes de lujo y emblemáticos parques para aprovechar la naturaleza entre la ciudad caminay y hacer un poco de deporte al aire 
-        libre están el parque del Virrey y El Parque de la 93. Además de nuestro exclusivo diseño, ponemos a tu disposición una oferta 
-        gastronómica tan sofisticada como saludable a base de productos locales, cargados de lo mejor de la tradición colombiana.</p>
-        <img class=" flex2" src="img/Hotelia negro vertical.svg" width="160px" alt="">
-    </div>
-   </section>
-
-
-   <section id="features">
-    <h2 class="feature-tittle">Razones por las que disfrutaras quedarte con nosotros</h2>
-    <div class="feature-description">
-        <div class="feature feature-blue">
-            <i class="fa-solid fa-bell-concierge"></i>
-            <p>Reserva</p>
-        </div>
-        <div class="feature feature-black">
-            <i class="fa-solid fa-bed"></i>
-            <p>Descanso</p>
-        </div>
-        <div class="feature feature-blue">
-            <i class="fa-solid fa-wifi"></i>
-            <p>Wifi</p>
-        </div>
-        <div  class="feature feature-black">
-            <i class="fa-solid fa-dumbbell"></i>
-            <p>Deporte</p>
-        </div>
-    </div>
-   </section>
-
-
+    
 </body>
 </html>
