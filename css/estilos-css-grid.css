@@ -187,7 +187,9 @@ nav a:hover {
 .feature-black{
     background-color: rgba(0,0,0,0.59);
 }
-
+#features{
+    display: none;
+}
 #ubicacion{
     display: flex;
     flex-direction: column;
@@ -219,6 +221,29 @@ nav a:hover {
     background-color: var(--negro2);
     height: 120px;
     font-size: 2em;
+}
+.op-banner{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 2rem;
+    height: 400px;
+    justify-content: space-between;
+    align-content: space-between;
+   
+}
+.op-banner img{
+    padding: 0 1rem;
+    max-height: 350px;
+    max-width: 350px;
+   
+}
+
+.op-banner p{
+    padding: 0 1rem;
+    max-height: 350px;
+    max-width: 350px;
+   
 }
 footer{
     background-color: var(--negro2);
@@ -301,26 +326,28 @@ footer i{
         flex-wrap: wrap;
     }
     #descripcion img{
+        flex-basis: 7rem;
+        padding-right: 2rem;
         display: block;
     }
     .flex1 {
-
         font-size: 1.3rem;
         flex-basis: 48rem;
         padding-left: 3rem;
     }
-    
-    .flex2 {
-        flex-basis: 9rem;
-        padding-right: 2rem;
-        display: block;
-        
-    }
 
     #featur{
+        display: none;
+    }
+
+    #features{
         display:flex;
         flex-direction: column;
         background-image: url('../img/index/bg-features.png');
+        background-position: 50% 50%;
+        background-size: cover;
+        max-width: 1200px;
+        width: 100%;
         color: white;
         padding-top: 1rem;
     
@@ -351,7 +378,6 @@ footer i{
         min-width: 180px;
         max-width: 250px;
     }
-    
     .feature i{
         font-size: 2em;
         margin-bottom: 1.5rem;
@@ -364,11 +390,39 @@ footer i{
     .feature-black{
         background-color: rgba(0,0,0,0.59);
     }
-    .iframe{
+    #ubicacion{
         max-width: 1200px;
         width: 100%;
     }
+    #opinion{
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .op-banner p{
+        font-family: 'Marcellus', serif;
+        position: absolute;
+    }
+    footer {
+       display: flex;
+       flex-direction: row;
+    }
+    .footer-hr{
+        display: none;
+    }
+    .footer-h3{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-r{
+        display: inline;
+   
+
+
+    }
 }
+
 
 /*Resolucion macro*/
 @media screen and (min-width:1308px) {
@@ -388,7 +442,23 @@ footer i{
         max-width: 1200px;
         width: 100%;
     }
-    .iframe{
+    #descripcion{
+        max-width: 1200px;
+        width: 100%;
+    }
+    #features{
+        max-width: 1200px;
+        width: 100%;
+    }
+    #ubicacion{
+        max-width: 1200px;
+        width: 100%;
+    }
+    #opinion{
+        max-width: 1200px;
+        width: 100%;
+    }
+    .footer{
         max-width: 1200px;
         width: 100%;
     }
