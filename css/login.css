@@ -33,8 +33,6 @@ h1, h2, h3,h4, h5 {
 #contenedor{
     display: flex;
     flex-direction: column;
-
-    background-color: rgba(50, 68, 148, 0.838);
     color: var(--blanco);
     max-width: 390px;
     max-height: 390px;

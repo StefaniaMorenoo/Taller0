@@ -26,3 +26,23 @@ body {
 h1, h2, h3,h4, h5 {
     font-family: 'Marcellus', serif;
 }
+#container-grid{
+    display: grid;
+    grid-template:
+    "head" auto
+    "cuerpo" auto
+    ;
+}
+.head{
+    color: var(--blanco);
+    background-color: var(--azuloscuro);
+    text-align: center;
+}
+.head img{
+
+    width: 4rem;
+}
+
+.tittle{
+    font-size: 3em;
+}
