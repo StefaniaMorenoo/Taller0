@@ -19,6 +19,9 @@
 }
 
 body {
+    background-image: url('https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_960_720.jpg' );
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
@@ -28,9 +31,75 @@ h1, h2, h3,h4, h5 {
 } 
 
 #contenedor{
-    
-    background-color: rgba(20, 47, 167, 0.838);
- 
-    
-    
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(50, 68, 148, 0.838);
+    color: var(--blanco);
+    max-width: 390px;
+    max-height: 390px;
+    height: 100%;
+    width: 100%;
+    text-align: start;
+    position: absolute;
+    left:20% ;
+   padding: 1rem 1rem;
 }
+
+#contenedor i{
+    background-color: var(--blanco);
+    color: var(--Magenta);
+    font-size: 5em;
+    text-align: center;
+}
+#contenedor img{
+    background-color: var(--blanco);
+    width: 100%;
+}
+input{
+    height: 1rem;
+    max-width: 350px;
+    width: 100%;
+}
+
+.navbar-button{
+    max-width: 360px;
+    width: 100%;
+    background-color: var(--negro2);
+    color: var(--blanco);
+}
+
+.log{
+    display: none;
+}
+/*Resolucion para tabletas*/
+@media screen and (min-width:768px) {
+   
+        
+}
+
+/*Resolucion desktop*/
+@media screen and (min-width:1024px) {
+.log{
+    display: flex;
+    flex-direction: column;
+    display: block;
+    text-decoration: none;
+}
+.log p{
+    color: var(--blanco);
+}
+a{
+    color: var(--negro2);
+    text-decoration: none;
+}
+}
+
+
+/*Resolucion macro*/
+@media screen and (min-width:1308px) {
+
+
+
+}
+
