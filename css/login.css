@@ -19,9 +19,10 @@
 }
 
 body {
-    background-image: url('https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_960_720.jpg' );
+    background-image: url('../img/login/bg-login.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 620px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
@@ -33,42 +34,80 @@ h1, h2, h3,h4, h5 {
 #contenedor{
     display: flex;
     flex-direction: column;
+    height: 400px;
+    width: 410px;
+    align-items: center;
     color: var(--blanco);
-    max-width: 390px;
-    max-height: 390px;
-    height: 100%;
-    width: 100%;
-    text-align: start;
-    position: absolute;
-    left:20% ;
-   padding: 1rem 1rem;
+    margin: auto;
+    border-radius: 3px;
+    font-size: 18px;
+    background-color:rgba(80, 132, 211, 0.555);
+    margin-top: 11%;
 }
 
 #contenedor i{
-    background-color: var(--blanco);
-    color: var(--Magenta);
-    font-size: 5em;
+    text-decoration: none;
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
     text-align: center;
+    background-color: var(--Magenta);
+    color:var(--blanco);
+    border-radius: 50%;
 }
-#contenedor img{
-    background-color: var(--blanco);
-    width: 100%;
+label{
+    float: left;
 }
 input{
-    height: 1rem;
-    max-width: 350px;
-    width: 100%;
+    box-shadow: 1px 1px 1px #0B3860;
+    float: inline-start;
+    height: 30px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: #fff;
 }
 
-.navbar-button{
-    max-width: 360px;
+
+.imge{
+    position: relative;
+    margin-top: 43px;
+    padding: 20px;
+    display: flex;
+    float: left;
+    margin-right: 50%;
+    width: 150px;
+}
+
+.imge2{
+    margin-top: -142px;
     width: 100%;
-    background-color: var(--negro2);
-    color: var(--blanco);
 }
 
 .log{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
     display: none;
+}
+.item{
+    width: 70%;
+    height: 30px;
+    background-color: var(--negro2);
+    color: var(--blanco);
+    border-radius: 3px;
+    margin-top:4% ;
+}
+
+
+.navbar-button{
+    font-family: 'Marcellus', serif;
+        max-width: 360px;
+        width: 100%;
+        background-color: var(--negro2);
+        color: var(--blanco);
 }
 /*Resolucion para tabletas*/
 @media screen and (min-width:768px) {
@@ -79,15 +118,15 @@ input{
 /*Resolucion desktop*/
 @media screen and (min-width:1024px) {
 .log{
-    display: flex;
-    flex-direction: column;
     display: block;
     text-decoration: none;
 }
 .log p{
+    font-size: 0.9em;
     color: var(--blanco);
 }
 a{
+    font-size: 1em;
     color: var(--negro2);
     text-decoration: none;
 }

@@ -117,16 +117,27 @@ nav a:hover {
 
 #banner{
     margin-top: 15%;
-    background-image: url('../img/index/slide1.jpg');
+
     background-size: cover;
     background-position: 50% 50%;
     min-height: 400px;
+
+}
+#carouselExampleCaptions h5{
+    background-color: rgb(0, 0, 0, 0.3);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    left: 30px;
+    max-width: 1200px;
+    width: 100%;
 
 }
 
 
 #descripcion p{
     padding: 2rem 1.2rem;
+    width: 100%;
 }
 
 #descripcion img{
@@ -221,6 +232,19 @@ nav a:hover {
     background-color: var(--negro2);
     height: 120px;
     font-size: 2em;
+}
+.im{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    border-radius: 100px;
+    width: 30%;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
 }
 .op-banner{
     display: flex;
