@@ -11,31 +11,46 @@
 <body>
 
     <div id="container-grid">
-        <div class="head">
-           <h2 class="tittle"> <img src="img/hotelia campana.svg" alt="">otelia</h2>
-            <h2 >Un lugar en tu corazón</h2>
+       
+        <div id="head">
+           <p class="tittle"> <img src="img/hotelia campana.svg" alt="">otelia</p>
+            <p class="titlep" >Un lugar en tu corazón</p>
         </div>
-        <div class="cuerpo">
+
+        <div id="body">
             <form action="" method="post">
                 <h1>Registrate </h1>
                 
                 <label for="">Tipo de Documento 
-                    <select name="select">
+                  <select name="select">
                     <option value="" selected>Escoja una opción</option>
                     <option value="">Cedula de ciudadania</option>
                     <option value="" >Pasaporte</option>
                     <option value="">Tarjeta de identidad</option>
                     <option value="">Otro</option>
-               
-                  </select>
-                </label>
-                <label for="">Número de documento <input type="number"> </label>
-                <label for="">Nombres <input type="text"></label>
+                  </select> </label>
+                
+                <label for="">Número de documento<input type="number"> </label>
+                
+                <label for="">Nombres <input type="text"> </label>
+
                 <label for="">Apellidos <input type="text"> </label>
-                <label for="">Fecha nacimiento <input type="date"></label>
-                <label for="">Genero <input type="radio"/>Mujer</label>
-                <label for=""> <input type="radio"/>Hombre</label>
-                <label for=""> <input type="radio"/>Otro</label>
+                
+
+                <label for="">Fecha nacimiento<input type="date"></label>
+                
+
+                <label for="">Género  </label>
+                <div class="genero">
+                    <br>
+                    <input type="radio"  name="genero" value="Mujer"> Mujer
+  
+                    <input type="radio" name="genero" value="Hombre"> Hombre
+                
+                    <input type="radio" name="genero" value="Otro"> Otro
+                </div>
+             
+
                 <label for="Email">Email <input type="email" name="" id=""></label>
                 <label for="">País de origen 
                     <select name="select">
@@ -48,10 +63,12 @@
                    
                     </select>
                 </label>
-                <label for="">Foto <input type="file"> </label>
+                <label for="">Foto <input type="text"> </label>
                <label for="">Contraseña <input type="password"></label>
                 <label for="">Confirmar contraseña <input type="password"></label>
-               <label for=""><input type="checkbox" name="" id=""> Acepto Términos y Condiciones</label>
+                <div class="genero1">
+            <input type="checkbox" name="" id="">   <label for=""> Acepto Términos y Condiciones</label>
+                </div>
                 <a href="#" class="item"> <button class="navbar-button">Ingresar</button></a>
                      
         

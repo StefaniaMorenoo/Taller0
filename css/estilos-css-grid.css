@@ -300,6 +300,9 @@ footer i{
     padding: 1rem 1rem;
    
 }
+.redes{
+    display: none;
+}
 /*Resolucion para tabletas*/
 @media screen and (min-width:768px) {
    
@@ -429,6 +432,8 @@ footer i{
     }
     footer {
        display: flex;
+       justify-content: space-between;
+       align-content: center;
        flex-direction: row;
     }
     .footer-hr{
@@ -440,10 +445,10 @@ footer i{
         
     }
     .footer-r{
-        display: inline;
-   
-
-
+        display: none;
+    }
+    .redes{
+        display: block;
     }
 }
 

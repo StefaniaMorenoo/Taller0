@@ -19,6 +19,7 @@
 }
 
 body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b6/BOG17.png');
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
@@ -27,8 +28,122 @@ h1, h2, h3,h4, h5 {
     font-family: 'Marcellus', serif;
 }
 #container-grid{
-    display: grid;
-    grid-template:
-    "nav" auto
-    "banner" auto
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    justify-content: center;
+
+}
+
+nav{
+    font-family: "Marcellus", serif;
+    font-size: 1.3em;
+    z-index:100;
+    max-width: 50px;
+    min-height:600px;
+    width: 100%;
+}
+.menu{
+    width: 50px;
+    height: 100%;
+    background-color: var(--azulnegro);
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    z-index: 300;
+
+}
+.menu i{
+    color:var(--blanco);
+    text-align: center;
+    margin-top: 30px;
+    width: 40px;
+}
+
+.sec1{
+    background-image: url(../img/Group\ 200.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.sec1 img{
+    text-align: center;
+    margin-top: 30px;
+    width: 40px;
+
+}
+
+i:hover{
+    background-color: var(--azuloscuro);
+    width: 100%;
+    
+}
+.exit{
+    margin-top: 50px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color:rgba(255, 255, 255, 0.74);
+    width: 490px;
+    
+}
+
+#form img{
+    width: 90px;
+}
+
+
+#form input{
+    width: 300px;
+    outline: none;
+}
+
+input,select{
+    height: 20px;
+    width: 300px;
+    outline: none;
+    border: none;
+
+}
+label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    align-content:flex-start;
+    padding: 1rem 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.genero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30px;
+}
+
+
+.navbar-button{
+    font-family: 'Marcellus', serif;
+    width: 100%;
+    background-color: var(--negro2);
+    color: var(--blanco);
+}
+
+
+/*Resolucion macro*/
+@media screen and (min-width:1308px) {
+
+    #container-grid{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+ 
+
 }
