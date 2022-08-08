@@ -237,14 +237,40 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     align-items: center;
-    border-radius: 100px;
+    border-radius: 50%;
     width: 30%;
+    margin-top: -1%;
+    padding: 0rem 1rem;
+    float: left;
+}
+.text{
+    margin-top: 2%;
+}
+.vect{
+    width: 243px;
+    height: 50px;
+    margin-top: 3%;
+}
+
+.container1 p{
+    text-align: center;
+    margin-top: 3%;
 }
 .container1{
+    background-image: url('../img/Group\ 200.svg');
+    background-repeat: no-repeat;
+    height: 190px;
+    position: relative;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    max-width: 350px;
+    width: 100%;
+    margin-top: -3%;
+ 
 }
 .op-banner{
     display: flex;
@@ -425,7 +451,7 @@ footer i{
         max-width: 1200px;
         width: 100%;
     }
-
+   
     .op-banner p{
         font-family: 'Marcellus', serif;
         position: absolute;

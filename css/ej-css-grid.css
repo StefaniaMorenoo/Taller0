@@ -61,13 +61,15 @@ footer{
 }
 
 
+
+
 @media screen and (min-width:1024px) {
     
     #container-grid{
         grid-template:
         "header header header" 100px
         "navbar main sidebar" auto
-        "footer footer  footer" 150px /
+        "footer footer  footer" 50px /
         200px auto 100px
         ;
     }

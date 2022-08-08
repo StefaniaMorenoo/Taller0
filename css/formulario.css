@@ -19,7 +19,7 @@
 }
 
 body {
-    background-image: url('https://www.peterlievano.com/wp-content/uploads/2018/03/panoramica_bogota_al_sur_2018-1.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2013/11/30/01/13/bogota-221345_960_720.jpg');
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,15 +36,14 @@ h1, h2, h3,h4, h5 {
    
 }
 #head{
-    background-color: var(--azuloscuro);  
+    background-color: rgba(54, 87, 196, 0.774);  
     color: var(--blanco);
-  
     width: 100%;
     margin: auto;
+    margin-top: -1%;
     height: 100px;
     padding-top: 1rem ;
     text-align: center;
-    gap: 1rem;
   
 }
 #head img{
@@ -60,15 +59,15 @@ h1, h2, h3,h4, h5 {
 .titlep{
     font-family: 'Marcellus', serif;
     font-size: 2em;
-    padding: 0.1rem;
+    margin-top: -2%;
 }
 
 
 #body{
     border-radius: 1%;
-    max-width: 500px;
-    max-height: 800px;
-    margin-top: 1%;
+    max-width: 400px;
+    max-height: 1200px;
+    padding: 1rem;
     width: 100%;
     margin: auto;
     background-color:rgba(255, 255, 255, 0.774);
@@ -107,27 +106,37 @@ input,select{
 .genero{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between ;
+    align-content: space-between;
+    text-align: start;
     width: 30px;
     outline: none;
     border: none;
 }
-
-.genero1{
-    display: flex;
+.genero1 p{
     flex-direction: row;
-    justify-content: space-around;
-
-
+    width: 20px;
 }
 
-
+.ttle{
+    display: none;
+}
 .navbar-button{
     font-family: 'Marcellus', serif;
         max-width: 360px;
         width: 100%;
         background-color: var(--negro2);
         color: var(--blanco);
+       
+}
+
+.item{
+    width: 120px;
+    float: left;
+    background-color: var(--negro2);
+    color: var(--blanco);
+    border-radius: 3px;
+  
 }
 
 @media screen and (min-width:1308px) {
@@ -135,6 +144,31 @@ input,select{
     #container-grid{
         max-width: 1200px;
         margin: 0 auto;
+        
+    }
+
+    #head{
+        width:350px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: 18px;
+        z-index: 300;
+    
+    }
+    .tittle{
+        margin-top: 59%;
+    }
+    .ttle{
+        font-family: 'Marcellus', serif;
+        font-size: 2em;
+        margin-top: -2%;
+        display: block;
+    }
+    .titlep{
+
+        display: none;
     }
  
 
