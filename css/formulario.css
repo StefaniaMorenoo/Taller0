@@ -36,7 +36,7 @@ h1, h2, h3,h4, h5 {
    
 }
 #head{
-    background-color: rgba(54, 87, 196, 0.774);  
+    background-color: rgba(54, 111, 196, 0.664);  
     color: var(--blanco);
     width: 100%;
     margin: auto;
@@ -65,10 +65,10 @@ h1, h2, h3,h4, h5 {
 
 #body{
     border-radius: 1%;
-    max-width: 400px;
+    max-width: 800px;
     max-height: 1200px;
     padding: 1rem;
-    width: 100%;
+    width: 50%;
     margin: auto;
     background-color:rgba(255, 255, 255, 0.774);
 }
@@ -77,13 +77,7 @@ h1, h2, h3,h4, h5 {
     text-align: center;
 }
 
-#body form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
+
 
 label{
     display: flex;
@@ -123,7 +117,9 @@ input,select{
 }
 .navbar-button{
     font-family: 'Marcellus', serif;
-        max-width: 360px;
+        max-width: 160px;
+        text-align: center;
+        align-items: center;
         width: 100%;
         background-color: var(--negro2);
         color: var(--blanco);
@@ -131,12 +127,14 @@ input,select{
 }
 
 .item{
-    width: 120px;
-    float: left;
+    width: 50px;
     background-color: var(--negro2);
     color: var(--blanco);
     border-radius: 3px;
   
+}
+.desk, .desk2{
+    display: none;
 }
 
 @media screen and (min-width:1308px) {
@@ -144,11 +142,13 @@ input,select{
     #container-grid{
         max-width: 1200px;
         margin: 0 auto;
-        
+     
     }
-
+    .mob{
+        display:  none;
+    }
     #head{
-        width:350px;
+        width:310px;
         height: 100%;
         position: fixed;
         top: 0;
@@ -170,6 +170,40 @@ input,select{
 
         display: none;
     }
+    .desk, .desk2{
+        display: block;
+    }
+    #body{
+        width: 500px;
+        align-items: center;
+    }
+  
+    #form{
+        width: 700px;
+        margin: 0;
+        padding: 0 1rem;
+        display: grid;
+        display: flex;
+        flex-direction: row; 
+    }
+
+    input,select{
+        width: 210px;
+        height: 23px;
+    }
+   
+    .item{
+        width: 180px;
+        height: 33px;
+        align-content: center;
+        text-align: center;
+       
+    }
  
+    a{
+        text-align: center; 
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
