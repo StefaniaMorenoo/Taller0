@@ -20,6 +20,7 @@
 
 body {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b6/BOG17.png');
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
@@ -174,11 +175,15 @@ label{
 }
 
 /*Resolucion macro*/
-@media screen and (min-width:1308px) {
+@media screen and (min-width:1024px) {
 
     #container-grid{
         max-width: 1200px;
         margin: 0 auto;
+
+    
+
+        
     }
     .menu{
         width: 270px;
@@ -268,14 +273,10 @@ label{
         display: block;
     }
     #form{
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "titleh2  titleh2 titleh2"
-        "column1 lef righ"
-        ;
-        display: flex;
-        flex-direction:row;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        max-height: 600px;
+   
     }
    
 
