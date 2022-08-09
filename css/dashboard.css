@@ -97,7 +97,7 @@ i:hover{
 .re2{
     display: none;
 }
-#form{
+.formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,16 +267,6 @@ label{
     .cpas{
         display: block;
     }
-    #form{
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "titleh2  titleh2 titleh2"
-        "column1 lef righ"
-        ;
-        display: flex;
-        flex-direction:row;
-    }
-   
+
 
 }
