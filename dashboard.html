@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashboard.css">
     <script src="https://kit.fontawesome.com/6131ecdde6.js"  crossorigin="anonymous"></script>
-    <title>Dashboard</title>
+    <title>Inicio de sesion</title>
 </head>
 <body>
     <div id="container-grid">
@@ -34,22 +34,22 @@
             <p><i class="fa-solid fa-bell-concierge"></i>Reservas</p>
         </div>
         <div class="exit">
-            <p><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar Sesión</p>
+            <p class="exitp">Cerrar Sesión</p><i class="fa-solid fa-arrow-right-from-bracket"></i>
         </div>
 
     </div>
     </nav>   
 
-    <section class="formulario">
+    <form action="" method="post" id="form">
         
-        <h2 class="titleh2">Bienvenido, Angie Vargas</h2>
-
+        <h2 class="titulo">Bienvenido, Angie Vargas</h2>
+        <div class="column-1">
         <img src="img/dash.jpg" alt="">
         <i class="fa-solid fa-image-user"></i>
-        <label for="" class="cpas"><a href="#" class="item"> <button class="navbar-button">Cambiar Contraseña</button></a></label>
-        </div>
 
-        <div< class="col2">
+        <label for="" class="cpas"><a href="#" class="item"> <button class="navbar-button">Cambiar Contraseña</button></a></label></div>
+<div class="column-2">
+
         <label for="" >Tipo de Documento  <input type="text"></label>
         <label >Nombres <input type="text"></label>
         <label >Fecha nacimiento <input type="date"></label>
@@ -64,8 +64,8 @@
          </label>
         </center>
         <label for="Email" >Email <input type="email" name="" id=""></label>
-        </div>
-        <div class="col3">
+    </div>
+    <div class="column-3">
         <label for="">Número de documento <input type="number"> </label>
 
         <label for="" >Apellidos <input type="text"> </label>
@@ -73,16 +73,18 @@
         <label for="">País de origen <input type="text"></label>
 
         <label for="" >Teléfono de contacto <input type="text"> </label>
-        </div>
-        <label for=""><a href="login.html" class="item"><button class="navbar-button">Actualizar</button></a></label>
-            
-        <label for="">Contraseña <input type="password"></label>
-        <label for="">Confirmar contraseña <input type="password"></label>
+    </div>   
+    <div class="foter">
+         
+       <label for=""><a href="login.html" class="item"><button class="navbar-button">Actualizar</button></a>
 
+     </label> <label for="">Contraseña <input type="password"></label>
+        <label for="">Confirmar contraseña <input type="password"></label>
+   
         <label for=""><a href="#" class="item"> <button class="navbar-button">Cambiar</button></a></label>
-           </div>  
-        </section>
-    </section>
+        
+    </div> 
+    </form>
     </div>
 </body>
 </html>
